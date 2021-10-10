@@ -166,7 +166,7 @@ func menuOne() {
 		Numbers[selection].Name, Numbers[selection].Yield, Numbers[selection].Grind, Numbers[selection].RatioMedium,
 		Numbers[selection].RatioStrong, Numbers[selection].BrewTime)
 
-	fmt.Println("\nFor instructions on how to use this brewer, enter HELP\nTo edit brewer settings, enter EDIT.\nTo continue, enter DONE")
+	fmt.Println("\nEnter HELP for instructions on how to use this brewer \nEnter EDIT to edit this brewer's settings\nEnter DONE to continue")
 	fmt.Print("\nInput-> ")
 
 	input = reader()
@@ -225,7 +225,7 @@ func menuTwo(i int64) { //Brewer settings edit menu
 		menuTwo(selection) //Brewer selected (i>0), next part of function can now be executed
 
 	} else {
-		fmt.Println("\nWhat property would you like to edit?\nPlease note: some values may not be edited.")
+		fmt.Println("\nWhat property would you like to edit?")
 		fmt.Println("\n1. The yield\n2. The optimal grind setting (Fine/Medium/Course)\n3. The ratio for a medium brew (1:?)\n4. The ratio for a strong brew (1:?)\n\n5. Go back")
 		fmt.Print("Input-> ")
 		input = reader()
