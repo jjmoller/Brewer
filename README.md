@@ -1,2 +1,2 @@
 # Brewer
-The definitive program for coffee geeks - programmed in Go
+The definitive program for coffee fanatics - programmed in Go
